@@ -1,0 +1,28 @@
+{
+  "name": "festival-musical",
+  "version": "1.0.0",
+  "description": "Aprendiendo Gulp y SASS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cartamar/Festival_Musical.git"
+  },
+  "keywords": [
+    "SASS",
+    "GULP",
+    "Node",
+    "NPM"
+  ],
+  "author": "ERik Ivan Gallardo Gutierrez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cartamar/Festival_Musical/issues"
+  },
+  "homepage": "https://github.com/cartamar/Festival_Musical#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
