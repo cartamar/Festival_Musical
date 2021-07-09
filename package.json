@@ -23,6 +23,9 @@
   },
   "homepage": "https://github.com/cartamar/Festival_Musical#readme",
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "dart-sass": "^1.25.0",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.0.0",
+    "node-sass": "^6.0.1"
   }
 }
