@@ -1,5 +1,5 @@
 
 
 function compilarSASS(){
-    console.log("compilandot");
+    console.log("compilando");
 }
