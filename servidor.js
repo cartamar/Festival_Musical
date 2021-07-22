@@ -3,16 +3,19 @@ const server = express();
 
 const port = 3000;
 
+//motor de plantilla
 server.set('view engine', 'ejs');
+//direccion de plantillas
+server.set('views', __dirname + '/views');
 
 server.use(express.static(__dirname + "/public"));
 
 server.get('/', (req, res) => {
-    res.send('Festival Musical');
+    res.render("index", { titulo: "mi titulo dinamico"});
 });
 
 server.use((req, res, next) => {
-    res.status(404).sendFile(__dirname + "/public/404.html")
+    res.status(404).render("404", {titulo: "Error 404"})
 })
 
 server.listen(port, () => {
