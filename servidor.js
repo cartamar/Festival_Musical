@@ -11,7 +11,7 @@ server.set('views', __dirname + '/views');
 server.use(express.static(__dirname + "/public"));
 
 server.get('/', (req, res) => {
-    res.render("index", { titulo: "mi titulo dinamico"});
+    res.render("index");
 });
 
 server.use((req, res, next) => {

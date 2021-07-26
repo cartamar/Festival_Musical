@@ -17,7 +17,7 @@ function cssMin( ){
 };
 
 function watchArchivos () {
-     watch('src/scss/app.scss', css);
+     watch('src/scss/**/*.scss', css);
 }
 
 // function JavaScript( done ) {
