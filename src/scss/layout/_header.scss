@@ -1,0 +1,36 @@
+.header {
+    background-color: $verde;
+    .contenido-header {
+        padding: $separacion / 2 0;
+        text-align: center;
+        
+        @include tablet {
+            display:  flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
+    h1 {
+        font-weight: $black;
+        color: $blanco;
+        margin-bottom: 1rem;
+        @include tablet {
+            margin-bottom: 0;
+        }
+    }
+}
+.nevagacion-principal {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+    a {
+        color: $blanco;
+        font-size: 2rem;
+        font-weight: $bold;
+        &:hover {
+            color: $amarillo;
+        }
+    }
+    
+}

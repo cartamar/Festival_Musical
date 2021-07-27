@@ -382,3 +382,46 @@ h2 {
 h3 {
   font-size: 3rem;
 }
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+.header {
+  background-color: #4CB8B3;
+}
+.header .contenido-header {
+  padding: 2.5rem 0;
+  text-align: center;
+}
+@media (min-width: 800px) {
+  .header .contenido-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.header h1 {
+  font-weight: 900;
+  color: #FFF;
+  margin-bottom: 1rem;
+}
+@media (min-width: 800px) {
+  .header h1 {
+    margin-bottom: 0;
+  }
+}
+
+.nevagacion-principal {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2rem;
+}
+.nevagacion-principal a {
+  color: #FFF;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.nevagacion-principal a:hover {
+  color: #FEF46D;
+}
