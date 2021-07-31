@@ -421,6 +421,7 @@ h1, h2, h3 {
 .nevagacion-principal {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 2;
   column-gap: 2rem;
 }
 .nevagacion-principal a {
@@ -508,6 +509,7 @@ h1, h2, h3 {
   .contenido-presentacion {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
     column-gap: 2.5rem;
     align-items: center;
   }

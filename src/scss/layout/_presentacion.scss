@@ -8,8 +8,7 @@
         color: $rosa;
    }
     @include tablet {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    @include grid(2, $separacion / 2);//mixing de grid
     column-gap: $separacion / 2;
     align-items: center;
     h3 { 

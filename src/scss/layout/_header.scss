@@ -25,8 +25,7 @@
     }
 }
 .nevagacion-principal {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    @include grid(3,2);//Mixing de grid
     column-gap: 2rem;
     
     a {
