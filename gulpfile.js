@@ -3,10 +3,12 @@ const sass = require('gulp-dart-sass');
 const imagemin = require('gulp-imagemin');
 const notify = require('gulp-notify');
 const webp = require('gulp-webp');
+const concat = require('gulp-concat');
 
 const paths = {
      imagenes: 'src/img/**/*',
-     scss: 'src/scss/**/*.scss'
+     scss: 'src/scss/**/*.scss',
+     js: 'src/js/**/*.js'
 }
 
 function css( ){
@@ -23,6 +25,12 @@ function cssMin( ){
      .pipe( dest('./public/css'));
 };
 
+function javaScript() {
+     return src(paths.js)
+     .pipe( concat('bundle.js'))
+     .pipe( dest('./public/js'));
+}
+
 function imagenes() {
      return src(paths.imagenes)
           .pipe(imagemin())
@@ -38,6 +46,7 @@ function versionWebp() {
 
 function watchArchivos () {
      watch(paths.scss, css);
+     watch(paths.js, javaScript);
 }
 
 // function JavaScript( done ) {
@@ -57,5 +66,5 @@ exports.cssMin = cssMin;
 exports.imagenes = imagenes;
 exports.watchArchivos = watchArchivos;
 // exports.JavaScript = JavaScript;
-exports.default = series(css, imagenes, versionWebp, watchArchivos);
+exports.default = series(css, javaScript, imagenes, versionWebp, watchArchivos);
 // exports.default = parallel(CSS, JavaScript, minHTML);
