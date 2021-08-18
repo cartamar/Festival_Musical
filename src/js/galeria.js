@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     crearGaleria();
+    let ancho = window.innerWidth
+    console.log(ancho);
 });
 
 function crearGaleria() {
@@ -34,6 +36,7 @@ function mostrarImagen( e ) {
     //cuando se sa click cierra la imagen
     overlay.onclick = function() {
         overlay.remove();
+        body.classList.remove('bloquear-body')
     }
 
     //Boton para cerrar imagen
@@ -47,8 +50,9 @@ function mostrarImagen( e ) {
         overlay.remove();
     };
 
-    //Ostrar en el HTML
+    //Mostrar en el HTML
     const body = document.querySelector('body');
     body.appendChild(overlay)
     body.classList.add('bloquear-body');
+    
 }

@@ -5,6 +5,10 @@ const notify = require('gulp-notify');
 const webp = require('gulp-webp');
 const concat = require('gulp-concat');
 
+//utilidades css
+const autoprefixer = require('outoprefixer');
+const postcss = require('gulp-postcss')
+
 const paths = {
      imagenes: 'src/img/**/*',
      scss: 'src/scss/**/*.scss',

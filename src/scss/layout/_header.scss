@@ -13,15 +13,24 @@
     }
 
     h1 {
-        font-weight: $bold;
-        color: $blanco;
-        margin-bottom: 1rem;
+        a {
+            font-weight: $bold;
+            color: $blanco;
+            margin-bottom: 1rem;
+        }
+        
         @include tablet {
             margin-bottom: 0;
         }
         @include telefono {
             font-size: 4rem;
         }
+        
+    }
+    &.fijo {
+        position: fixed;
+        width: 100%;
+        box-shadow:0 .3rem .4rem #444;
     }
 }
 .nevagacion-principal {

@@ -5,3 +5,28 @@
 .bg-verde {
     background-color: $verde ;
 }
+
+.bg-1 {
+    background-color: $amarillo;
+    .calendario li:nth-child(odd) {
+        background-color: darken($amarillo, 10);
+    }
+    @include tablet {
+        background-color: $verde;
+        .calendario li:nth-child(odd) {
+            background-color: darken($verde, 10);
+        }
+    }
+}
+.bg-2 {
+    background-color: $verde;
+    .calendario li:nth-child(odd) {
+        background-color: darken($verde, 10);
+    }
+    @include tablet {
+        background-color: $amarillo;
+        .calendario li:nth-child(odd) {
+            background-color: darken($amarillo, 10);
+        }
+    }
+}

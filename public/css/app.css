@@ -398,6 +398,36 @@ h1, h2, h3 {
   background-color: #4CB8B3;
 }
 
+.bg-1 {
+  background-color: #FEF46D;
+}
+.bg-1 .calendario li:nth-child(odd) {
+  background-color: #fef03a;
+}
+@media (min-width: 800px) {
+  .bg-1 {
+    background-color: #4CB8B3;
+  }
+  .bg-1 .calendario li:nth-child(odd) {
+    background-color: #3b9691;
+  }
+}
+
+.bg-2 {
+  background-color: #4CB8B3;
+}
+.bg-2 .calendario li:nth-child(odd) {
+  background-color: #3b9691;
+}
+@media (min-width: 800px) {
+  .bg-2 {
+    background-color: #FEF46D;
+  }
+  .bg-2 .calendario li:nth-child(odd) {
+    background-color: #fef03a;
+  }
+}
+
 .header {
   background-color: #4CB8B3;
 }
@@ -413,7 +443,7 @@ h1, h2, h3 {
     justify-content: space-between;
   }
 }
-.header h1 {
+.header h1 a {
   font-weight: 700;
   color: #FFF;
   margin-bottom: 1rem;
@@ -427,6 +457,11 @@ h1, h2, h3 {
   .header h1 {
     font-size: 4rem;
   }
+}
+.header.fijo {
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 0.3rem 0.4rem #444;
 }
 
 .nevagacion-principal {
@@ -655,4 +690,71 @@ h1, h2, h3 {
 .btn-cerrar:hover {
   background-color: #e6e6e6;
   cursor: pointer;
+}
+
+.boletos {
+  padding: 5rem 0;
+}
+.boletos h3 {
+  text-align: center;
+  color: #FFF;
+}
+@media (min-width: 800px) {
+  .boletos .contenedor-boletos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+  }
+}
+.boletos .plan P {
+  text-align: center;
+  color: #FFF;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.pase {
+  width: 100%;
+  border-spacing: 0;
+}
+.pase thead {
+  background-color: #F53756;
+}
+.pase thead th {
+  padding: 1rem;
+  color: #FFF;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.pase tbody {
+  background-color: #FFF;
+}
+.pase tbody td {
+  padding: 1rem;
+  border-bottom: 0.1rem solid #e1e1e1;
+}
+.pase tbody tr:last-of-type td {
+  border: none;
+}
+.pase tfoot {
+  background-color: #752f97;
+}
+.pase tfoot td {
+  padding: 1rem;
+  color: #FFF;
+  font-weight: 700;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.footer {
+  background-color: #F53756;
+  padding: 1rem;
+  text-align: center;
+}
+.footer p {
+  color: #FFF;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
 }

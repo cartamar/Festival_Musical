@@ -23,12 +23,16 @@
   },
   "homepage": "https://github.com/cartamar/Festival_Musical#readme",
   "devDependencies": {
+    "autoprefixer": "^10.3.1",
+    "cssnano": "^5.0.7",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-dart-sass": "^1.0.2",
     "gulp-imagemin": "^7.1.0",
     "gulp-notify": "^4.0.0",
+    "gulp-postcss": "^9.0.0",
     "gulp-sass": "^5.0.0",
+    "gulp-sourcemaps": "^3.0.0",
     "gulp-webp": "^4.0.1",
     "node-sass": "^6.0.1"
   },
