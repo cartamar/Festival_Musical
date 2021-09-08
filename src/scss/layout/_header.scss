@@ -13,11 +13,9 @@
     }
 
     h1 {
-        a {
             font-weight: $bold;
             color: $blanco;
             margin-bottom: 1rem;
-        }
         
         @include tablet {
             margin-bottom: 0;
